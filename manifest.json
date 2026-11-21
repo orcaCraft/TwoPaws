@@ -1,0 +1,24 @@
+
+{
+  "name": "TwoPaws - Our Little Space",
+  "short_name": "TwoPaws",
+  "description": "A little shared space for our dates and adventures.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff8f5",
+  "theme_color": "#f5dce2",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "public/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "public/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
