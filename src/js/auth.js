@@ -62,3 +62,26 @@ window.twoPawsAuth = {
 };
 
 console.log("TwoPaws authentication module loaded!");
+
+// Make authentication functions available to the app
+window.twoPawsAuth = {
+    signInWithGoogle,
+    signOutUser,
+    listenToAuthChanges
+};
+
+console.log("TwoPaws authentication module loaded!");
+
+// Temporary Google sign-in test
+window.testTwoPawsLogin = async function () {
+    try {
+        const result = await window.twoPawsAuth.signInWithGoogle();
+
+        console.log("TEST SUCCESSFUL!");
+        console.log("User:", result.user.email);
+        console.log("Drive access token received:", !!result.accessToken);
+
+    } catch (error) {
+        console.error("TEST FAILED:", error);
+    }
+};
